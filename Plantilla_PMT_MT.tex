@@ -1,0 +1,59 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+% !TEX spellcheck = es_CL
+% Creado por Fabián Inostroza 2015
+
+\pdfinclusioncopyfonts=0
+\pdfcompresslevel=9
+\documentclass[12pt,letterpaper, oneside]{book}
+%\usepackage[T1]{fontenc}
+\usepackage[activeacute,spanish,es-tabla]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\spanishdecimal{.}
+%\usepackage[letterpaper,headsep=1.3cm,top=1.5in,left=1in,right=1in]{geometry}
+% formato pagina oficial
+\usepackage[letterpaper,headsep=1cm,top=2.5cm,left=2.5cm,%
+				right=2cm, bottom=2cm, headheight=1.5cm]{geometry}
+%\usepackage[letterpaper,headsep=1.3cm,top=1.5cm,left=2.5cm,%
+%				right=2cm, bottom=1.5cm]{geometry}
+
+\newcommand{\colorlinks}{true}
+
+\newcommand{\InfAvance}{}%
+
+%\usepackage{wrapfig}
+\author{Nombre del Autor}
+\title{Título del trabajo}
+
+\input{preambulo}
+
+\ProfGuia{Profesor Guía}
+\ComisionA{Comisión A}
+\ComisionB{Comisión B}
+
+\begin{document}
+
+\pagenumbering{roman}
+\input{portadaOficial}
+%\input{portada2}
+
+\tableofcontents
+\listoffigures
+
+\include{abreviaciones}
+\include{nomenclatura}
+
+\newpage
+\pagenumbering{arabic}
+\setstretch{1.3}
+
+\include{Introduccion}
+\include{Revision-bibliografica}
+\include{Definicion-problema}
+\include{Avances}
+\include{Conclusion}
+\include{Bibliografia}
+%\appendix
+
+\end{document}

@@ -1,0 +1,75 @@
+% !TeX root=Plantilla_PMT_MT.tex
+% Creado por Fabián Inostroza 2015
+
+%\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\begin{titlepage}
+\begin{center}
+%{\LARGE\textbf{UNIVERSIDAD DE CONCEPCIÓN}}\\[.4em]
+%{\Large FACULTAD DE INGENIERÍA}\\[.4em]%\par
+%{\large DEPARTAMENO DE INGENIERÍA ELÉCTRICA}%\\%[2cm]
+%
+%\begin{huge}
+{\LARGE\textbf{UNIVERSIDAD DE CONCEPCIÓN}}\\[.4em]
+{\Large FACULTAD DE INGENIERÍA}\\[.4em]%\par
+{\large DEPARTAMENO DE INGENIERÍA ELÉCTRICA}%\\%[2cm]
+%\end{huge}
+\end{center}
+\vskip 1.5cm
+%\vskip 1cm
+%\hfill
+\begin{center}
+%\begin{center}
+\includegraphics[width=0.22\textwidth]{logoudec}%\\[1cm]
+%\end{center}
+\end{center}
+\vskip 2cm
+\begin{center}
+\ifdefined\InfAvance
+%\textit{
+Informe de Avance del Proyecto de Memoria de Título
+%}%\\[2em]
+\else
+%\textit{
+Informe Final del Proyecto de Memoria de Título
+%}%\\[2em]
+\fi
+\vskip 1cm
+\begin{minipage}{0.9\textwidth}
+\begin{center}
+{\Huge\textbf{\Title} \par }
+\end{center}
+\end{minipage}
+
+\vskip 1cm
+% Autor y supervisor
+%{\large{\textbf{\textsf{\Author}}}}%\\[1.6cm]
+{\large{\textbf{\Author}}}
+%\Author
+
+\vfill
+
+\begin{large}
+\makeatletter
+\textbf{
+\@ProfGuia\\%
+\@ComisionA%
+\@ComisionB%
+}%\\[1cm]
+\makeatother
+\end{large}
+
+\vskip 1.5cm
+
+Concepción, \monthname\ \the\year
+\end{center}
+
+\ifdefined\NoBgThispage
+\NoBgThispage
+\fi
+%\setcounter{page}{0}
+\end{titlepage}
+% WTF, tengo que agregar esto fuera y dentro del titlepage
+% para que no tire error
+\ifdefined\NoBgThispage
+\NoBgThispage
+\fi
