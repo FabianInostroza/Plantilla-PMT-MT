@@ -33,6 +33,18 @@
 \usepackage{bibentry} % \bibentry
 \nobibliography*
 
+% redefinicion del comando bibentry para que los enlaces 
+% de las citas apunten a la bibliografia y no a donde se
+% usa el bibentry
+\makeatletter
+\renewcommand\bibentry[1]{\nocite{#1}{\frenchspacing
+     \@nameuse{BR@r@#1\@extra@b@citeb}}}
+%% original de bibentry.sty
+%\newcommand\bibentry[1]{\nocite{#1}{\frenchspacing
+%     \hyper@natanchorstart{#1\@extra@b@citeb}%
+%     \@nameuse{BR@r@#1\@extra@b@citeb}\hyper@natanchorend}}
+\makeatother
+
 %  para cambiar interlineado
 % en diferentes partes del texto
 % \setstretch{1.3}
