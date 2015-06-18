@@ -33,6 +33,14 @@
 \ComisionB{Comisión B}
 
 \begin{document}
+% este comando permite solucionar los problemas cuando
+% las referencias tienen el campo url
+% http://nw360.blogspot.com/2012/05/latex-bibentry-package-and-ieee.html
+% puede que no sea tan util, despues de todo no he encontrado 
+% una forma de excluir la url del texto que genera \bibitem y
+% se ve mal
+\bstctlcite{BSTcontrol}
+
 
 \pagenumbering{roman}
 \input{portadaOficial}
