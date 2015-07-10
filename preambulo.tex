@@ -219,8 +219,11 @@ contents={%
      breaklines=true,
      tabsize=4,
      extendedchars=true,
+     keepspaces=true,
+     columns=fullflexible, % permite copiar codigo desde el pdf
 }
 
+% para que arroje error cuando se usan caracteres extendidos
 \lstset{literate=
   {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
   {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
@@ -245,7 +248,6 @@ contents={%
   keywordstyle=\color{tableau10_1},
   stringstyle=\color{tableau10_5},
   commentstyle=\color{tableau10_3},
-  columns=fullflexible, % permite copiar codigo desde el pdf
 % basicstyle=\scriptsize\ttfamily,
   basicstyle=\footnotesize\ttfamily,
   numbers=left,
