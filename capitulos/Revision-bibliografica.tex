@@ -10,6 +10,27 @@
 
 \begin{itemize}
 \item \mybibentry{Brown1992}.
+
+Esta entrada bibliográfica está almacenada en el archivo \verb|biblio.bib|, con el siguiente formato
+\begin{lstlisting}
+@article{Brown1992,
+ author = {Brown, Lisa Gottesfeld},
+ title = {A Survey of Image Registration Techniques},
+ journal = {ACM Comput. Surv.},
+ issue_date = {Dec. 1992},
+ volume = {24},
+ number = {4},
+ month = dec,
+ year = {1992},
+ issn = {0360-0300},
+ pages = {325--376},
+ numpages = {52},
+ url = {http://doi.acm.org/10.1145/146370.146374},
+} 
+\end{lstlisting}
+
+Para agregar una entrada nueva se debe actualizar el archivo \verb|biblio.bib| con la entrada requerida, citarla en el documento con el comando \verb|\cite{entrada}|, por ejemplo \verb|\cite{Brown1992}|, compilar el documento \LaTeX{}, y luego ejecutar 
+\texttt{bibtex Plantilla\-\_\-PMT\-\_\-MT.aux}, en la siguiente compilación del documento \LaTeX{} la referencia será visible.
 \end{itemize}
 
 \section{Discusión}
