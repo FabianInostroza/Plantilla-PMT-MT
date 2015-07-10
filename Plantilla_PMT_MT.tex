@@ -5,11 +5,12 @@
 
 \pdfinclusioncopyfonts=0
 \pdfcompresslevel=9
-\documentclass[12pt,letterpaper, oneside]{book}
+% activar la linea de abajo si da error 131 en adobe
+%\pdfminorversion=4
+\documentclass[12pt,letterpaper, oneside]{report}
 %\usepackage[T1]{fontenc}
-\usepackage[activeacute,spanish,es-tabla]{babel}
-\usepackage[utf8x]{inputenc}
-\usepackage{ucs}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[utf8]{inputenc}
 \spanishdecimal{.}
 %\usepackage[letterpaper,headsep=1.3cm,top=1.5in,left=1in,right=1in]{geometry}
 % formato pagina oficial
@@ -20,6 +21,7 @@
 
 \newcommand{\colorlinks}{true}
 
+% Comentar en la version final
 \newcommand{\InfAvance}{}%
 
 %\usepackage{wrapfig}
@@ -48,8 +50,14 @@
 \input{portada/portadaOficial}
 %\input{portada/portada2}
 
+%% el paquete microtype hace que a veces los puntos en 
+%% el TOC no terminen en el mismo lugar
+%% http://tex.stackexchange.com/a/172795 .
+%% desactivar la protrusion en el TOC
+\microtypesetup{protrusion=false}
 \tableofcontents
 \listoffigures
+\microtypesetup{protrusion=true}
 
 \include{capitulos/abreviaciones}
 \include{capitulos/nomenclatura}
